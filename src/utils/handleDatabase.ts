@@ -1,9 +1,8 @@
-import { db } from './db'
-
+import db from './db'
 
 export async function getData() {
     try {
-        const data = await db.query('SELECT * FROM quotes')
+        const data = await db.query('SELECT * FROM quotes ORDER BY id')
         return data.rows
     }
     catch (error) {
@@ -22,9 +21,9 @@ export async function saveData(quote: string, author: string) {
     }
 }
 
-export async function updateData(id: string, author: string, quote: string) {
+export async function updateData(id: string, author: string) {
     try {
-        await db.query("UPDATE quotes SET author = $1, quote = $2 WHERE id = $3", [author, quote, id])
+        await db.query("UPDATE quotes SET author = $1,  WHERE id = $2", [author, id])
         return 'Updated'
     } catch (error) {
         console.log(error)

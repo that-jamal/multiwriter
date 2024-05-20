@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+---
 
-## Getting Started
+# Multi Writer
 
-First, run the development server:
+Multi Writer is a collaborative writing application that allows multiple users to write and view the same document in real-time. This application includes a live server and a database for persistent storage, ensuring that all changes are saved and synchronized across all users.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Real-time Collaboration**: Multiple users can write and edit the document simultaneously with changes reflected in real-time.
+- **Persistent Storage**: All changes are saved to a database, ensuring that no data is lost and users can access their documents anytime.
+- **Live Server**: A live server handles all client requests and updates, providing a seamless collaborative experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Backend**: Node.js, Express.js
+- **Frontend**: Next.js, React.js, Tailwind CSS
+- **Database**: PostgreSQL
+- **Real-time Updates**: Socket.io
+- **Languages**: TypeScript
+- **Build Tools**: TSX, PostCSS
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+To get a local copy up and running, follow these simple steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repo**
+   ```sh
+   git clone https://github.com/your-username/multi-writer.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Navigate to the project directory**
+   ```sh
+   cd multi-writer
+   ```
 
-## Deploy on Vercel
+3. **Install dependencies**
+   ```sh
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Set up environment variables**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   Create a `.env` file in the root directory and add the following:
+
+   ```
+   DATABASE_URL=your_postgresql_database_url
+   NEXT_PUBLIC_SOCKET_URL=your_socket_io_server_url
+   ```
+
+5. **Start the development server**
+   ```sh
+   npm run dev
+   ```
+
+## Usage
+
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Create or join a document.
+3. Start collaborating in real-time!
+
+## Scripts
+
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the project for production.
+- `npm start`: Starts the production server.
+- `npm run lint`: Runs linting on the project files.
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
