@@ -2,7 +2,7 @@
 
 # MultiWriter
 
-Multi Writer is a collaborative writing application that allows multiple users to write and view the same document in real-time. This application includes a live server and a database for persistent storage, ensuring that all changes are saved and synchronized across all users.
+MultiWriter is a collaborative writing application that allows multiple users to write and view the same document in real-time. This application includes a live server and a database for persistent storage, ensuring that all changes are saved and synchronized across all users.
 
 ## Features
 
