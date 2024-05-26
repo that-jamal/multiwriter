@@ -1,9 +1,11 @@
 
 import Docs from "@/app/components/docs";
-
+import Footer from "./components/Footer";
 export default async function Home() {
   return (
-    <Docs />
-
+    <div>
+      <Docs />
+      <Footer />
+    </div>
   );
 }

@@ -21,13 +21,14 @@ export async function saveData(quote: string, author: string) {
     }
 }
 
-export async function updateData(id: string, author: string) {
+export async function updateData(author: string, id: number) {
     try {
-        await db.query("UPDATE quotes SET author = $1,  WHERE id = $2", [author, id])
+        await db.query("UPDATE quotes SET author = $1  WHERE id = $2", [author, id])
         return 'Updated'
+
     } catch (error) {
         console.log(error)
-        return 'Somthing went wrong'
+        return '3 Somthing went wrong'
     }
 }
 

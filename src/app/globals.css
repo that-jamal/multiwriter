@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-image: url("https://t4.ftcdn.net/jpg/02/87/98/41/240_F_287984109_irUO2tGLLN9nLrzAEFxyWaHTo0HP6qTe.jpg");
+}
+
+@font-face {
+    font-family: Cyber;
+    src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+    font-display: swap;
+}
+
+@layer components {
+
+    .foot {
+        flex: 1;
+    }
+
+    .tilt {
+        clip-path: polygon(0% 0%, 120% 0%, 100% 200%, 0px 140px, -50px 60px);
+    }
+
+    .tilt2 {
+        clip-path: polygon(0% 0%, 120% 0%, 100% 155%, 0px 250px, -50px 60px);
+    }
+
+    .tilt3 {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 200%, 0px 70px, -50px 60px);
+    }
+
+    .tilt4 {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 200%, 0px 40px, -50px 60px);
+    }
+
+    .glitch {
+        box-shadow: inset -3px 0 0 var(--shadow-primary);
+        width: max-content;
+        --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
+        --primary-lightness: 50;
+        --shadow-primary-hue: 180;
+
+    }
+}
