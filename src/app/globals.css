@@ -40,6 +40,5 @@ body {
         --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
         --primary-lightness: 50;
         --shadow-primary-hue: 180;
-
     }
 }

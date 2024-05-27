@@ -9,8 +9,6 @@ export default function page({ params }) {
                 <Link href={`/`}><button className="tilt4 glitch text-2xl h-26 p-4 bg-black hover:bg-[#fcee0a] font-custom text-[#fcee0a] hover:text-black">go back</button></Link>
             </div>
             <Socket id={params.id} />
-
-
         </div>
     )
 }

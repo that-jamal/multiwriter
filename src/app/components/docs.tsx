@@ -2,7 +2,6 @@
 import { getData, saveData, updateData, deleteData } from "@/utils/handleDatabase";
 import { revalidateTag } from "next/cache"
 import Link from "next/link";
-import Footer from "./Footer";
 export default async function docs() {
     const data = await getData()
     const create = async (formData: FormData) => {
@@ -61,7 +60,6 @@ export default async function docs() {
                         </form>
                     </div>
                 ))}
-
             </div>
             nice
         </section>
