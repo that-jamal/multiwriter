@@ -36,7 +36,7 @@ export default async function docs() {
                 <input className=" placeholder-slate-500 bg-[#00ffd2] hover:bg-cyan-500 active:bg-indigo-600 text-xl text-indigo-950 px-4 py-2 ease-in-out" type="text" name="author" placeholder="Name" />
                 <button className=" bg-[#00ffd2] hover:bg-cyan-500 active:bg-indigo-600 text-xl text-indigo-950 px-4 py-2   ">Create Document</button>
             </form>
-            <div className="  flex flex-wrap p-7 gap-4 justify-between pb-20 ">
+            <div className="  flex flex-wrap p-7 gap-4 justify-center pb-20 ">
                 {data.map(q => (
                     <div key={q.id} className="tilt2  glitch flex flex-col items-center justify-center gap-4 min-h-64 bg-[#fcee0a]  p-5 mb-8 ">
                         <div className="flex items-center">
@@ -61,7 +61,7 @@ export default async function docs() {
                     </div>
                 ))}
             </div>
-            nice
+
         </section>
 
     );
