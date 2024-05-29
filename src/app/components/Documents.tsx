@@ -1,12 +1,8 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import io from 'socket.io-client';
+import io, { Socket as SocketIO } from 'socket.io-client';
 
-type SocketProps = {
-    on: (d: string, callback: (e: any) => void) => void;
-    emit: (d: string, b: any) => void;
-}
-let socket: SocketProps
+let socket: SocketIO
 export default function Socket({ id }: { id: string }) {
     const [messages, setMessage] = useState('')
     useEffect(() => {
@@ -34,9 +30,7 @@ export default function Socket({ id }: { id: string }) {
                     className="w-full text-xl h-96 p-4 border border-gray-300 rounded"
                     placeholder="Start typing here..."
                 />
-
             </div>
-
         </div>
     );
 }

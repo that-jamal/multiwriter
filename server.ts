@@ -39,12 +39,8 @@ NextApp.prepare().then(() => {
             const msg = data.rows[0].quote
             roomMessages[id] = msg
         })
-
     })
-
-
     server.listen(port, () => {
-
         console.log(`> Ready on http://localhost:${port}`)
     })
 })

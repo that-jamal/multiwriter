@@ -52,8 +52,8 @@ export default async function docs() {
                         <form action={deleteForm}>
                             <button className=" flex ease-in-out hover:bg-[#00ffd2]">
                                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="0" y1="0" x2="16" y2="16" stroke="red" strokewidth="1.5" />
-                                    <line x1="0" y1="16" x2="16" y2="0" stroke="red" strokewidth="1.5" />
+                                    <line x1="0" y1="0" x2="16" y2="16" stroke="red" strokeWidth="1.5" />
+                                    <line x1="0" y1="16" x2="16" y2="0" stroke="red" strokeWidth="1.5" />
                                 </svg>
                             </button>
                             <input type="hidden" name="id" value={q.id} />
